@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+</head>
+<body>
+    <!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="scrollTopBtn">↑</button>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Aaditya <span>Ghanwat</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="index.html">Home</a></div>
+                <div class="link"><a href="about.html">About</a></div>
+                <div class="link"><a href="resume.html">Resume</a></div>
+                <div class="link"><a href="project.html">Project</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <!-- <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="resume.html">Resume</a>
+                <a href="project.html">Project</a> -->
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1 class="section-title">My Projects</h1>
+        <p class="section-subtitle">A showcase of my recent work</p>
+
+        <div class="projects-container">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="slider">
+                    <img src="asset/project 1/Untitled design (1).png" alt="Project 1">
+                    <img src="asset/project 1/Untitled design (2).png" alt="Project 1">
+                    <img src="asset/project 1/Untitled design (3).png" alt="Project 1">
+                </div>
+                <div class="project-content">
+                    <h2>Portfolio Website</h2>
+                    <p>A sleek and modern portfolio website built with HTML, CSS, and JavaScript.</p>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="slider">
+                    <img src="asset/project 2/Untitled design (1).png" alt="Project 2">
+                    <img src="asset/project 2/Untitled design (2).png" alt="Project 2">
+                    <img src="asset/project 2/Untitled design (3).png" alt="Project 2">
+                </div>
+                <div class="project-content">
+                    <h2>Modern periodic table</h2>
+                    <p>An interactive and responsive periodic table web app displaying detailed information for all 118 elements.</p>
+                    <a href="https://periodic-table-by-aditya.netlify.app/" class="project-btn">View Project</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="slider">
+                    <img src="asset/project 3/Untitled design.jpg" alt="Project 3">
+                    <img src="asset/project 3/Untitled design (1).png" alt="Project 3">
+                    <img src="asset/project 3/Untitled design (2).png" alt="Project 3">
+                </div>
+                <div class="project-content">
+                    <h2>Fanta Landing Page</h2>
+                    <p>A sleek and modern product landing page for fanta built with HTML, CSS, and JavaScript.</p>
+                    <a href="https://fanta-landing-page-by-aaditya.netlify.app/" class="project-btn">View Project</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+<script src="project.js"></script>
+<script>
+    window.onscroll = function () {
+      const btn = document.getElementById("scrollTopBtn");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+  
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+  
+
+</body>
+</html>
